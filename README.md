@@ -7,7 +7,7 @@ _Image Source: https://leankit.com_
 
 ## Intro
 
-react-taskboard is a kanban style task board. It is a mini project management tool. This mini application has a set of reusable React components, and it uses Redux as the data store. This project uses [Storybook](https://github.com/storybooks/storybook), a UI development environment that comes with everything you need (React, ES6, Webpack, hot-reloading, dev server, and more...).
+react-taskboard is a kanban style task board prototype. This project has a set of reusable React components, and it uses Redux as the data store. This project uses [Storybook](https://github.com/storybooks/storybook), a UI development environment that comes with everything you need (React, ES6, Webpack, hot-reloading, dev server, and more...).
 
 ## Get started
 
