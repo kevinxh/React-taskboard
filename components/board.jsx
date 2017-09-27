@@ -1,8 +1,11 @@
 import React from 'react'
+import Container from './Container'
 
 const Board = () => {
     return (
-        <div>This is the Board.</div>
+        <div>
+            <Container />
+        </div>
     )
 }
 
