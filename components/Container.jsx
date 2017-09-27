@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import update from 'immutability-helper'
-import { DragDropContext } from 'react-dnd'
-import HTML5Backend from 'react-dnd-html5-backend'
 import Card from './Card'
 
 const style = {
-  width: 400,
+    width: '300px',
+    backgroundColor: '#ddd',
+    padding: '20px',
+    margin: '0 0.25%',
+    display: 'inline-block',
+    zoom: '1',
+    whiteSpace: 'initial'
 }
 
-class Container extends Component {
+export default class Container extends Component {
   constructor(props) {
     super(props)
     this.moveCard = this.moveCard.bind(this)
@@ -71,4 +75,3 @@ class Container extends Component {
   }
 }
 
-export default DragDropContext(HTML5Backend)(Container)
