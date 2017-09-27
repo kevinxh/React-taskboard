@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import update from 'immutability-helper'
 import { DragDropContext } from 'react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
 import Card from './Card'
@@ -41,14 +42,14 @@ class Container extends Component {
     const { cards } = this.state
     const dragCard = cards[dragIndex]
 
-    this.setState({
+    this.setState(update(this.state, {
       cards: {
         $splice: [
           [dragIndex, 1],
           [hoverIndex, 0, dragCard],
         ],
       },
-    })
+    }))
   }
 
   render() {

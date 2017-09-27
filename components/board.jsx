@@ -5,6 +5,7 @@ const Board = () => {
     return (
         <div>
             <Container />
+            <Container />
         </div>
     )
 }
